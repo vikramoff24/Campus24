@@ -1,0 +1,86 @@
+.community-item-card-plus {
+	font-size: 120px;
+	height: 100px;
+	width: 100px;
+	color: #f1f2f6;
+	font-weight: bold;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	border: none;
+	position: relative;
+	top: -8px;
+	transition: 0.1s;
+}
+
+.community-item-card-plus:hover {
+	color: grey;
+}
+
+.community-item-card-plus:focus {
+	outline: none;
+}
+
+#communitiesCarouselWrapper {
+	width: 100%;
+	max-width: 964px;
+	position: relative;
+}
+
+#communitiesCarousel {
+	overflow: auto;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
+#communitiesCarousel::-webkit-scrollbar {
+	height: 0;
+}
+
+#carouselPrevButton,
+#carouselNextButton {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background: white;
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 50%;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+#carouselPrevButton {
+	top: 50%;
+	left: 0;
+	transform: translate(-25%, -50%);
+	display: none;
+}
+
+#carouselNextButton {
+	top: 50%;
+	right: 0;
+	transform: translate(25%, -50%);
+}
+
+#communitiesCarouselContent {
+	display: grid;
+	grid-gap: 16px;
+	grid-auto-flow: column;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.communitiesCarouselItem {
+	width: 180px;
+	height: 180px;
+	background: green;
+}
+
+@media (max-width: 992px) {
+	#carouselPrevButton,
+	#carouselNextButton {
+		display: none;
+	}
+}

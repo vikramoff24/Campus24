@@ -1,0 +1,10 @@
+.sidebar-blog-media-img {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 5;
+	display: inline-block;
+	background-position: center;
+	background-size: cover;
+}

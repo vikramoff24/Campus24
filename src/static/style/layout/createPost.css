@@ -1,0 +1,132 @@
+.create-post-btn {
+	height: max-content;
+	width: max-content;
+	position: fixed;
+	bottom: 15px;
+	right: 45px;
+	background-color: #2b579d;
+	padding: 12px 14px;
+	border-radius: 12px;
+	border: none;
+	color: white;
+	font-size: larger;
+	z-index: 100;
+	transition: 0.1s;
+}
+
+.create-post-btn:hover,
+.create-post-btn:focus {
+	color: white;
+	transform: scale(1.05);
+	outline: none;
+}
+
+.btn-add-tag {
+	padding: 8px 12px;
+	border-radius: 12px;
+	border: none;
+	text-align: center;
+	background-color: #171e30;
+	color: white;
+	margin: auto;
+}
+
+.btn-add-tag:focus {
+	outline: none;
+}
+
+.text-btn {
+	background-color: transparent;
+	border: none;
+	color: #171e30;
+}
+
+.text-btn:focus {
+	outline: none;
+}
+
+.btn-img-selection-post {
+	border: none;
+	color: rgb(47, 79, 255);
+	font-size: xx-large;
+}
+
+.btn-img-selection-post:focus {
+	outline: none;
+}
+
+.form-control {
+	border: none;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.upload-post-btn,
+.upload-post-btn-anonymous {
+	border: none;
+	color: white;
+	border-radius: 8px;
+	padding: 8px 12px;
+	margin: 2px 8px;
+	background-color: #2050a8;
+}
+
+.upload-post-btn-anonymous {
+	background-color: #1a6e00;
+}
+
+.upload-post-btn:focus,
+.upload-post-btn-anonymous:focus {
+	outline: none;
+}
+
+.background-color-show {
+	height: 8px;
+	width: 100px;
+}
+
+.event-color-holder-btn {
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+.event-color-btn-holder {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+	.create-post-btn {
+		bottom: 60px;
+		right: 25px;
+	}
+	.scope-text-small {
+		font-size: x-small;
+	}
+	.btn-add-tag {
+		font-size: small;
+	}
+}
+
+@media (max-width: 768px) {
+	.scope-text-small {
+		font-size: medium;
+	}
+}
+
+@media (max-width: 568px) {
+	.post-form-holder {
+		padding: 28px 16px !important;
+	}
+	.scope-text-small {
+		font-size: x-small;
+	}
+	.btn-add-tag {
+		font-size: smaller;
+	}
+}

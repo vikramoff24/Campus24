@@ -1,0 +1,155 @@
+html, body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+.friend {
+  padding: auto;
+  height: 100px;
+  background:none;
+  border-bottom: 1px solid rgb(196, 192, 192);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgba(150, 185, 240, 0.3);
+  margin:15px;
+  width:90%;
+}
+#friend-list{
+  margin-top: 10px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.friend img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid #49638C;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.friend .name {
+  font-size: 18px;
+  align-items: center;
+  margin-left:50px;
+}
+
+.friend  .uname {
+  padding: 2px;
+  font-size: 15px;
+  color: #49638C;
+}
+
+.friend  .cname {
+  padding: 2px;
+  font-size: 13px;
+  color: #49638C;
+}
+.friend .btn {
+ margin-left: 650px;
+ display: inline-block;
+ border-radius: 12px;
+}
+.btn :hover{
+    color: #49638C;
+
+}
+/* .search_bar{
+  margin-top: 50px;
+} */
+ 
+
+form.search_bar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 12px;
+  float: center;
+  background: #f1f1f1;
+  color: darkblue;
+}
+
+.search_text{
+  width: 87%;
+  align-items: center;
+  border-right: none;
+  padding: 20px;
+  padding-bottom: 2.2px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: 1px solid grey;
+  border-left: none;  
+  cursor: pointer; 
+  margin-left: 30px;
+  /* margin-top: 30px; */
+}
+
+.btn_search{
+   width: 3%;
+  padding: 2px;
+  background: #f1f1f1; 
+  color: darkblue;
+  margin: 3px;
+  padding-bottom: 5.2px; 
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  /* margin-top: 50px; */
+}
+.category{
+  font-size: 16px; 
+  font-weight: 600;
+  width: 20%;
+  background: white; 
+  color: #0dffa4;
+  margin-left: 25px;
+  /* margin-top: 5px; */
+  display: inline-block;
+  border-radius: 12px;
+  padding-bottom: 5.2px; 
+  height: 30px;
+  border: 1px solid rgb(73, 99, 140);
+  /* background: #fff; */
+  outline-width: 0px;
+}
+.category:hover{
+  background: rgb(1, 14, 34);
+}
+.chat-icon{
+  height: 30px;
+  width: 30px;
+  background-image: url("/img/layout/chatN.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 10%;
+  top: 35%;
+}
+.chat-icon:hover{
+  background-image: url("/img/layout/chatH.svg");
+}
+
+form.search_bar button:hover {
+  background: rgb(73, 99, 140);
+  color: white
+}
+
+form.category button:hover {
+  background-color: rgb(213, 225, 244);
+  color: white;
+  font-weight: 10;
+}
+.users{
+  position: relative;
+}
+.users :hover{
+  background-color: white;
+}
+

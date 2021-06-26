@@ -1,0 +1,24 @@
+.sidebar-communities-item {
+	list-style: none;
+	margin-bottom: 6px;
+}
+
+.sidebar-community-follow-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-start;
+}
+
+.sidebar-community-name {
+	font-size: small;
+}
+
+.sidebar-community-follow-info {
+	font-size: x-small;
+}
+
+@media (max-width: 1200px) {
+	.sidebar-community-follow-info {
+		font-size: xx-small;
+	}
+}

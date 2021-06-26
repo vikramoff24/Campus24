@@ -1,0 +1,218 @@
+.post-body {
+	background-color: white;
+	border-radius: 6px;
+}
+
+.post-user-profilepic {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.user-img {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.post-item-time-ago {
+	font-size: small;
+}
+
+.detailsMenuButton {
+	background-color: transparent;
+	border: none;
+	transition: 0.1s;
+}
+
+.detailsMenuButton:hover {
+	color: gray;
+}
+
+.detailsMenuButton:focus {
+	outline: none;
+}
+
+.post-reaction-btn {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.1s;
+}
+
+.post-reaction-btn:hover {
+	transform: scale(1.05);
+}
+
+.post-reaction-btn:focus {
+	outline: none;
+}
+
+.post-comment-container {
+	background-color: #f1f2f6;
+	height: 40px;
+	border-radius: 20px;
+	margin-left: 8px;
+	margin-right: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.post-comment-container-img {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+}
+
+.post-comment-container-form {
+	width: 80%;
+}
+
+.post-comment-container-comment {
+	background-color: transparent;
+	border: none;
+	font-weight: 400;
+	width: 100%;
+}
+
+.post-comment-container-comment:focus,
+.post-comment-container-emojiBtn:focus {
+	outline: none;
+	font-weight: bold;
+}
+
+.post-comment-container-emojiBtn {
+	height: 25px;
+	width: 25px;
+	border: none;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	transition: 0.1s;
+}
+
+.post-comment-container-emojiBtn:hover {
+	transform: scale(1.05);
+}
+
+.post-comment-image button {
+	height: 300px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	border: none;
+}
+
+.action-time-display {
+	background-color: #f1f2f6;
+	border-radius: 4px;
+	padding: 4px 12px;
+	border: none;
+	transition: 0.1s;
+}
+
+button.action-time-display:hover {
+	background-color: gray;
+}
+
+.action-time-display:focus {
+	outline: none;
+}
+
+@media (max-width: 992px) {
+	.user-img {
+		height: 30px;
+		width: 30px;
+	}
+	.post-item-info,
+	.post-item-text {
+		font-size: x-small;
+	}
+	.post-item-time-ago {
+		font-size: x-small;
+	}
+	.post-comment-image button {
+		height: 200px;
+	}
+	.post-reaction-btn {
+		transform: scale(0.9);
+	}
+	.post-reaction-btn:hover {
+		transform: scale(0.95);
+	}
+	.post-action-time-add-to-calender-btn {
+		margin-top: 8px !important;
+		margin-left: 0 !important;
+		margin-right: auto;
+	}
+	.post-comment-container-form {
+		width: 75%;
+	}
+}
+
+@media (max-width: 768px) {
+	.user-img {
+		height: 35px;
+		width: 35px;
+	}
+	.post-item-info,
+	.post-item-text {
+		font-size: medium;
+	}
+	.post-item-time-ago {
+		font-size: small;
+	}
+	.post-comment-image button {
+		height: 300px;
+	}
+	.post-reaction-btn {
+		transform: scale(1);
+	}
+	.post-reaction-btn:hover {
+		transform: scale(1.05);
+	}
+	.post-action-time-add-to-calender-btn {
+		margin-top: auto !important;
+		margin-left: auto !important;
+		margin-right: 0 !important;
+	}
+	.post-comment-container-form {
+		width: 85%;
+	}
+}
+
+@media (max-width: 576px) {
+	.user-img {
+		height: 28px;
+		width: 28px;
+	}
+	.post-item-info {
+		font-size: x-small;
+	}
+	.post-item-time-ago {
+		font-size: xx-small;
+	}
+	.post-item-text {
+		font-size: smaller;
+	}
+	.post-comment-image button {
+		height: 200px;
+	}
+	.post-reaction-btn {
+		transform: scale(0.9);
+	}
+	.post-reaction-btn:hover {
+		transform: scale(0.95);
+	}
+	.post-comment-container-form {
+		width: 75%;
+	}
+}

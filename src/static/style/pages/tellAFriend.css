@@ -1,0 +1,72 @@
+.btn-share-link {
+	border: 2px solid #34832a;
+	background-color: #f1ffe6;
+	color: #34832a;
+	padding: 12px;
+	width: 100%;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: 0.1s;
+	position: relative;
+}
+
+.btn-share-app {
+	border: 2px solid #656eff;
+	background-color: #f4f4ff;
+	color: #656eff;
+	padding: 12px;
+	width: 100%;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: 0.1s;
+}
+
+.btn-share-link:hover,
+.btn-share-app:hover {
+	transform: scale(1.05);
+	filter: brightness(95%) saturate(125%);
+}
+
+.btn-share-link:focus,
+.btn-share-app:focus {
+	outline: none;
+}
+
+.btn-container-tell-a-friend {
+	width: 400px;
+}
+
+#link-copied-prompt {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 8px 12px;
+	border-radius: 4px;
+	display: none;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	animation: 2s link-copy-anim ease-in-out;
+}
+
+@keyframes link-copy-anim {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.btn-container-tell-a-friend {
+		width: 80vw;
+	}
+}

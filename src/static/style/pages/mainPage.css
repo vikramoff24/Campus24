@@ -1,0 +1,57 @@
+.sort-text-main-page {
+	font-size: xx-small;
+}
+
+.main-page-post-separation {
+	width: 80%;
+	height: 40px;
+	display: inline-block;
+}
+
+.sort-dropdown-toggle {
+	width: 20%;
+	display: inline-block;
+	background-color: transparent;
+	font-weight: bold;
+	border: none;
+}
+
+.sort-dropdown-toggle:focus {
+	outline: none;
+}
+
+@media (max-width: 1200px) {
+	.main-page-post-separation {
+		width: 75%;
+	}
+	.sort-dropdown-toggle {
+		width: 25%;
+	}
+}
+
+@media (max-width: 992px) {
+	.main-page-post-separation {
+		width: 70%;
+	}
+	.sort-dropdown-toggle {
+		width: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-page-post-separation {
+		width: 80%;
+	}
+	.sort-dropdown-toggle {
+		width: 20%;
+	}
+}
+
+@media (max-width: 576px) {
+	.main-page-post-separation {
+		width: 70%;
+	}
+	.sort-dropdown-toggle {
+		width: 30%;
+	}
+}

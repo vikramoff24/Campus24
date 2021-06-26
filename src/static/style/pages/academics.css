@@ -1,0 +1,130 @@
+.academicDetails {
+	background-color: hsl(0, 0%, 89%);
+	/* background: linear-gradient(to bottom right,blue,skyblue); */
+    position: relative;
+    margin-top: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.cover{
+	margin-left: auto;
+	margin-right: auto;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+}
+
+.detail-form {
+	width: max-content;
+	padding: 1% 2%;
+	background:  #ffffff;
+	margin-bottom: 20px;
+	border: 5px solid white;
+}
+
+.effect-box
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 3px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect-box:before, .effect-box:after{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:200px / 10px;
+    border-radius:200px / 10px;
+}
+
+.effect-box:after{
+  right:20px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.position {
+	position: relative;
+	bottom: 36px;
+	z-index: 1;
+	width: 100%;
+}
+
+.header-form{
+	width: 100%;
+	display: flex;
+}
+
+.icon-div{
+	flex:1;
+	display: flex;
+}
+
+.header-name{
+	flex:1;
+	margin: auto;
+}
+
+#pic {
+	position: relative;
+	bottom: 55px;
+	left: 2%;
+	border-style: groove;
+	border: 5px solid white;
+}
+
+.py-1 {
+	padding-top:4px;
+	padding-bottom: 4px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+
+.academicMain{
+	width:60%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+}
+
+@media screen and (max-width: 950px) {
+	.academicMain{
+		width: 70%; /* The width is 100%, when the viewport is 800px or smaller */
+		transition: 0.3s;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.academicMain{
+		width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+		transition: 0.3s;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.academicMain{
+		width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+		transition: 0.3s;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.academicMain{
+		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		transition: 0.3s;
+	}
+}
